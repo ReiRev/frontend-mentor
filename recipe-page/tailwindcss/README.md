@@ -35,7 +35,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### What I learned
 
-In the Figma design file, a dividers with the height of 0px and the stroke height of 1px are used. To implement this, I needed to create a divider like the following.
+In the Figma design file, dividers with a height of 0px and a stroke height of 1px are used. To implement this, I needed to create a divider like the following:
 
 ```html
 <div class="h-0">
@@ -43,9 +43,9 @@ In the Figma design file, a dividers with the height of 0px and the stroke heigh
 </div>
 ```
 
-In the above implementation, the content of the divider is overflowed.
+In the implementation above, the content of the divider overflows.
 
-Dividers are also used in a table. In this case, I needed to wrap the divider with `<td>`.
+Dividers are also used in tables. In this case, I needed to wrap the divider with `<td>`.
 
 ## Author
 
