@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              green: "hsl(75, 94%, 57%)",
+              white: "hsl(0, 0%, 100%)",
+              gray: {
+                700: "hsl(0, 0%, 20%)",
+                800: "hsl(0, 0%, 12%)",
+                900: "hsl(0, 0%, 8%)",
+              },
+            },
+            fontFamily: {
+              inter: ['"Inter"', "sans-serif"],
+            },
+            keyframes: {
+              buttonHovered: {
+                "0%": { "background-color": "hsl(0, 0%, 20%)" },
+                "100%": { "background-color": "hsl(75, 94%, 57%)" },
+              },
+            },
+            animation: {
+              buttonHovered: "buttonHovered 0.4s forwards",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+  </head>
+
+  <body class="bg-gray-900">
+    <main class="min-h-screen grid items-center justify-center font-inter text-white">
+      <div class="w-[327px] lg:w-[384px] p-[24px] lg:p-[40px] space-y-[24px] rounded-[12px] bg-gray-800">
+        <img
+          src="./assets/images/avatar-jessica.jpeg"
+          alt="Jessica Randall"
+          class="w-[88px] h-[88px] mx-auto rounded-full"
+        />
+
+        <div class="text-center space-y-[4px]">
+          <span class="block font-semibold text-[24px] leading-[150%]">Jessica Randall</span>
+          <span class="block font-semibold text-[14px] leading-[150%] text-green">London, United Kingdom</span>
+        </div>
+
+        <span class="block text-[14px] leading-[150%]">"Front-end developer and avid reader."</span>
+
+        <div class="space-y-[16px]">
+          <a
+            class="block p-[12px] bg-gray-700 font-bold text-[14px] text-center rounded-[8px] hover-text-green hover:bg-green hover:text-black ease-out duration-[400ms,200ms]"
+            href="https://github.com/ReiRev"
+            target="_blank"
+            >GitHub</a
+          >
+
+          <a
+            class="block p-[12px] bg-gray-700 font-bold text-[14px] text-center rounded-[8px] hover-text-green hover:bg-green hover:text-black ease-out duration-[400ms,200ms]"
+            href="https://www.frontendmentor.io/profile/ReiRev"
+            target="_blank"
+            >Frontend Mentor</a
+          >
+          <a
+            class="block p-[12px] bg-gray-700 font-bold text-[14px] text-center rounded-[8px] hover-text-green hover:bg-green hover:text-black ease-out duration-[400ms,200ms]"
+            href="https://www.linkedin.com/in/reirev/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a
+            class="block p-[12px] bg-gray-700 font-bold text-[14px] text-center rounded-[8px] hover-text-green hover:bg-green hover:text-black ease-out duration-[400ms,200ms]"
+            href="https://x.com/RevRei2913"
+            target="_blank"
+            >Twitter</a
+          >
+          <a
+            class="block p-[12px] bg-gray-700 font-bold text-[14px] text-center rounded-[8px] hover-text-green hover:bg-green hover:text-black ease-out duration-[400ms,200ms]"
+            href="https://www.instagram.com/"
+            target="_blank"
+            >Instagram</a
+          >
+        </div>
+      </div>
+
+      <div class="text-sm text-center fixed bottom-4 left-1/2 transform -translate-x-1/2">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="text-[color:hsl(228,45%,44%)] hover:underline duration-300"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/ReiRev" class="text-[color:hsl(228,45%,44%)] hover:underline duration-300">ReiRev</a
+        >.
+      </div>
+    </main>
+  </body>
+</html>
