@@ -1,116 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            yellow: "hsl(47,88%,63%)",
-                            white: "hsl(0,0%,100%)",
-                            "gray-500": "hsl(0,0%,42%)",
-                            "gray-950": "hsl(0,0%,7%)",
-                        },
-                        fontFamily: {
-                            figtree: ['"Figtree"', "sans-serif"],
-                        },
-                    },
-                },
-            };
-        </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellow: "hsl(47,88%,63%)",
+              white: "hsl(0,0%,100%)",
+              "gray-500": "hsl(0,0%,42%)",
+              "gray-950": "hsl(0,0%,7%)",
+            },
+            fontFamily: {
+              figtree: ['"Figtree"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
 
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./assets/images/favicon-32x32.png"
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <style>
+      @font-face {
+        font-family: "Figtree";
+        src: url("./assets/fonts/Figtree-VariableFont_wght.ttf")
+          format("truetype");
+      }
+
+      @font-face {
+        font-family: "Figtree";
+        src: url("./assets/fonts/Figtree-Italic-VariableFont_wght.ttf")
+          format("truetype");
+        font-style: italic;
+      }
+    </style>
+
+    <title>Frontend Mentor | Blog preview card</title>
+  </head>
+  <body class="bg-yellow font-figtree">
+    <main class="grid items-center justify-center min-h-screen">
+      <div
+        class="w-[327px] lg:w-[384px] p-[24px] space-y-[24px] rounded-[20px] bg-white border-gray-950 border-[1px] box-border drop-shadow-[8px_8px_0_rgba(0,0,0,1)]"
+      >
+        <img
+          src="./assets/images/illustration-article.svg"
+          alt="illustration article"
+          class="h-[200px] rounded-[10px] object-cover"
         />
 
-        <style>
-            @font-face {
-                font-family: "Figtree";
-                src: url("./assets/fonts/Figtree-VariableFont_wght.ttf")
-                    format("truetype");
-            }
+        <div class="space-y-[12px]">
+          <span
+            class="px-[12px] py-[4px] rounded-[4px] block w-fit bg-yellow text-gray-950 font-bold text-[12px] lg:text-[14px] leading-[150%]"
+          >
+            Learning
+          </span>
+          <time
+            datetime="2023-12-03"
+            class="block w-fit text-gray-950 text-[12px] lg:text-[14px] leading-[150%]"
+          >
+            Published 21 Dec 2023
+          </time>
+          <h1
+            class="text-gray-950 hover:text-yellow duration-300 font-extrabold text-[20px] lg:text-[24px] leading-[150%]"
+          >
+            HTML & CSS foundations
+          </h1>
+          <p
+            class="text-gray-500 text-[14px] lg:text-[16px] font-medium leading-[150%]"
+          >
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </div>
 
-            @font-face {
-                font-family: "Figtree";
-                src: url("./assets/fonts/Figtree-Italic-VariableFont_wght.ttf")
-                    format("truetype");
-                font-style: italic;
-            }
-        </style>
+        <div class="space-x-[12px] flex items-center">
+          <img
+            src="./assets/images/image-avatar.webp"
+            alt="Greg Hooper"
+            class="w-[32px] h-[32px]"
+          />
+          <span class="text-gray-950 font-extrabold text-[14px] leading-[150%]"
+            >Greg Hooper</span
+          >
+        </div>
+      </div>
 
-        <title>Frontend Mentor | Blog preview card</title>
-    </head>
-    <body class="bg-yellow font-figtree">
-        <main class="grid items-center justify-center min-h-screen">
-            <div
-                class="w-[327px] lg:w-[384px] p-[24px] space-y-[24px] rounded-[20px] bg-white border-gray-950 border-[1px] box-border drop-shadow-[8px_8px_0_rgba(0,0,0,1)]"
-            >
-                <img
-                    src="./assets/images/illustration-article.svg"
-                    alt="illustration article"
-                    class="h-[200px] rounded-[10px] object-cover"
-                />
-
-                <div class="space-y-[12px]">
-                    <span
-                        class="px-[12px] py-[4px] rounded-[4px] block w-fit bg-yellow text-gray-950 font-bold text-[12px] lg:text-[14px] leading-[150%]"
-                    >
-                        Learning
-                    </span>
-                    <time
-                        datetime="2023-12-03"
-                        class="block w-fit text-gray-950 text-[12px] lg:text-[14px] leading-[150%]"
-                    >
-                        Published 21 Dec 2023
-                    </time>
-                    <h1
-                        class="text-gray-950 hover:text-yellow duration-300 font-extrabold text-[20px] lg:text-[24px] leading-[150%]"
-                    >
-                        HTML & CSS foundations
-                    </h1>
-                    <p
-                        class="text-gray-500 text-[14px] lg:text-[16px] font-medium leading-[150%]"
-                    >
-                        These languages are the backbone of every website,
-                        defining structure, content, and presentation.
-                    </p>
-                </div>
-
-                <div class="space-x-[12px] flex items-center">
-                    <img
-                        src="./assets/images/image-avatar.webp"
-                        alt="Greg Hooper"
-                        class="w-[32px] h-[32px]"
-                    />
-                    <span
-                        class="text-gray-950 font-extrabold text-[14px] leading-[150%]"
-                        >Greg Hooper</span
-                    >
-                </div>
-            </div>
-
-            <div
-                class="text-sm text-center fixed bottom-4 left-1/2 transform -translate-x-1/2"
-            >
-                Challenge by
-                <a
-                    href="https://www.frontendmentor.io?ref=challenge"
-                    target="_blank"
-                    class="text-[color:hsl(228,45%,44%)]"
-                    >Frontend Mentor</a
-                >. Coded by
-                <a
-                    href="https://github.com/ReiRev"
-                    class="text-[color:hsl(228,45%,44%)]"
-                    >ReiRev</a
-                >.
-            </div>
-        </main>
-    </body>
+      <div
+        class="text-sm text-center fixed bottom-4 left-1/2 transform -translate-x-1/2"
+      >
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="text-[color:hsl(228,45%,44%)]"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://github.com/ReiRev"
+          class="text-[color:hsl(228,45%,44%)]"
+          >ReiRev</a
+        >.
+      </div>
+    </main>
+  </body>
 </html>
