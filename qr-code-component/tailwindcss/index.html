@@ -1,83 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            "slate-300": "#D5E1EF",
-                            "slate-500": "#68778D",
-                            "slate-900": "#1F314F",
-                            white: "#FFFFFF",
-                        },
-                        fontFamily: {
-                            outfit: ['"Outfit"', "sans-serif"],
-                        },
-                    },
-                },
-            };
-        </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "slate-300": "#D5E1EF",
+              "slate-500": "#68778D",
+              "slate-900": "#1F314F",
+              white: "#FFFFFF",
+            },
+            fontFamily: {
+              outfit: ['"Outfit"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
 
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
-            rel="stylesheet"
-        />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-        <title>Frontend Mentor | QR code component</title>
-    </head>
-    <body class="bg-slate-300 grid items-center justify-center min-h-screen">
-        <div class="bg-white w-[320px] rounded-[20px] p-[16px] pb-[40px]">
-            <img
-                src="./images/image-qr-code.png"
-                alt="QR Code"
-                class="w-[288px] h-[288px] rounded-[10px] margin-x-auto"
-            />
-            <div
-                class="mt-[24px] px-[16px] font-outfit text-center space-y-[16px]"
-            >
-                <p
-                    class="font-bold text-[22px] text-slate-900 leading-[120%] tracking-[0px]"
-                >
-                    Improve your front-end <br />skills by building projects
-                </p>
-                <p
-                    class="text-[15px] text-slate-500 leading-[140%] tracking-[0.2px]"
-                >
-                    Scan the QR code to visit Frontend <br />
-                    Mentor and take your coding skills to <br />
-                    the next level
-                </p>
-            </div>
-        </div>
-
-        <div
-            class="attribution text-sm text-center fixed bottom-4 left-1/2 transform -translate-x-1/2"
+    <title>Frontend Mentor | QR code component</title>
+  </head>
+  <body class="bg-slate-300 grid items-center justify-center min-h-screen">
+    <div class="bg-white w-[320px] rounded-[20px] p-[16px] pb-[40px]">
+      <img
+        src="./images/image-qr-code.png"
+        alt="QR Code"
+        class="w-[288px] h-[288px] rounded-[10px] margin-x-auto"
+      />
+      <div class="mt-[24px] px-[16px] font-outfit text-center space-y-[16px]">
+        <p
+          class="font-bold text-[22px] text-slate-900 leading-[120%] tracking-[0px]"
         >
-            Challenge by
-            <a
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                class="text-[color:hsl(228,45%,44%)]"
-                >Frontend Mentor</a
-            >. Coded by
-            <a
-                href="https://github.com/ReiRev"
-                class="text-[color:hsl(228,45%,44%)]"
-                >ReiRev</a
-            >.
-        </div>
-    </body>
+          Improve your front-end <br />skills by building projects
+        </p>
+        <p class="text-[15px] text-slate-500 leading-[140%] tracking-[0.2px]">
+          Scan the QR code to visit Frontend <br />
+          Mentor and take your coding skills to <br />
+          the next level
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="attribution text-sm text-center fixed bottom-4 left-1/2 transform -translate-x-1/2"
+    >
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-[color:hsl(228,45%,44%)]"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/ReiRev" class="text-[color:hsl(228,45%,44%)]"
+        >ReiRev</a
+      >.
+    </div>
+  </body>
 </html>
