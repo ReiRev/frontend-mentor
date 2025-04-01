@@ -44,17 +44,19 @@
     <!-- text-preset-4: font-mont text-[12px] leading-[1.2] tracking-[5px] -->
     <!-- text-preset-5: font-mont text-[13px] leading-[1.2] -->
   </head>
-  <body class="h-screen bg-cream">
-    <main class="mx-auto py-[80px] max-w-[350px]">
-      <picture class="rounded-t-[8px]">
+  <body class="h-screen bg-cream md:grid md:items-center md:justify-center">
+    <main class="mx-auto py-[80px] max-w-[350px] md:max-w-none md:flex">
+      <picture class="max-md:rounded-t-[8px] md:rounded-s-md md:w-[300px]">
         <source srcset="./images/image-product-desktop.jpg" media="(min-width:480px)" />
         <img
           src="./images/image-product-mobile.jpg"
           alt="Gabrielle"
-          class="w-full h-[342px] object-cover rounded-[inherit]"
+          class="w-full h-[342px] md:h-full object-cover rounded-[inherit]"
         />
       </picture>
-      <div class="p-[32px] space-y-[24px] bg-white rounded-b-[8px]">
+      <div
+        class="p-[32px] space-y-[24px] md:space-y-[32px] bg-white max-md:rounded-b-[8px] md:rounded-e-[8px] md:w-[300px]"
+      >
         <div class="space-y-[24px]">
           <span class="font-mont text-[12px] leading-[1.2] h-[14px] tracking-[5px] text-gray uppercase block"
             >Perfume</span
