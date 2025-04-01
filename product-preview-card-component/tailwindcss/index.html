@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              green: {
+                500: "hsl(158, 36%, 37%)",
+                700: "hsl(158, 42%, 18%)",
+              },
+              black: "hsl(212, 21%, 14%)",
+              gray: "hsl(228, 12%, 48%)",
+              cream: "hsl(30, 38%, 92%)",
+              white: "hsl(0, 0%, 100%)",
+            },
+            fontFamily: {
+              mont: ['"Montserrat"', "sans-serif"],
+              fraunces: ['"Fraunces"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- text-preset-1: font-fraunces text-[32px] leading-[1] font-bold -->
+    <!-- text-preset-2: font-mont text-[14px] leading-[1.1] font-bold -->
+    <!-- text-preset-3: font-mont text-[14px] leading-[1.6]  -->
+    <!-- text-preset-4: font-mont text-[12px] leading-[1.2] tracking-[5px] -->
+    <!-- text-preset-5: font-mont text-[13px] leading-[1.2] -->
+  </head>
+  <body class="h-screen bg-cream">
+    <main class="mx-auto py-[80px] max-w-[350px]">
+      <picture class="rounded-t-[8px]">
+        <source srcset="./images/image-product-desktop.jpg" media="(min-width:480px)" />
+        <img
+          src="./images/image-product-mobile.jpg"
+          alt="Gabrielle"
+          class="w-full h-[342px] object-cover rounded-[inherit]"
+        />
+      </picture>
+      <div class="p-[32px] space-y-[24px] bg-white rounded-b-[8px]">
+        <div class="space-y-[24px]">
+          <span class="font-mont text-[12px] leading-[1.2] h-[14px] tracking-[5px] text-gray uppercase block"
+            >Perfume</span
+          >
+          <h1 class="font-fraunces text-[32px] leading-[1] text-black font-bold">Gabrielle Essence Eau De Parfum</h1>
+          <p class="font-mont text-[14px] leading-[22px] text-gray">
+            A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of
+            CHANEL.
+          </p>
+        </div>
+        <div class="flex space-x-[16px] items-center">
+          <span class="font-fraunces text-[32px] leading-[1] font-bold text-green-500">$149.99</span>
+          <span class="line-through font-mont text-[13px] leading-[1.2] text-gray">$169.99</span>
+        </div>
+        <div
+          class="px-[32px] py-[16px] space-x-[8px] rounded-[8px] items-center justify-center bg-green-500 hover:bg-green-700 flex ease-in duration-200"
+        >
+          <img src="./images/icon-cart.svg" alt="cart" class="w-[18px] h-[18px]" />
+          <span class="font-mont text-[14px] leading-[1.1] font-bold text-white"> Add to Cart </span>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-sm text-center fixed bottom-4 left-1/2 transform -translate-x-1/2">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-[color:hsl(228,45%,44%)] hover:underline duration-300"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/ReiRev" class="text-[color:hsl(228,45%,44%)] hover:underline duration-300">ReiRev</a>.
+    </footer>
+  </body>
+</html>
