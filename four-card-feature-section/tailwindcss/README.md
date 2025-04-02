@@ -13,6 +13,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
+    - [Useful resources](#useful-resources)
   - [Author](#author)
 
 ## Overview
@@ -43,6 +44,10 @@ Users should be able to:
 ### What I learned
 
 How to use grid layout with Tailwind CSS.
+
+### Useful resources
+
+- [html - Prevent border from bending with the container's border radius - Stack Overflow](https://stackoverflow.com/questions/73358785/prevent-border-from-bending-with-the-containers-border-radius) - This show how to make the horizontal border with border-radius.
 
 ## Author
 
