@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cyan: {
+                300: "hsl(192,90%,77%)",
+                600: "hsl(192,37%,48%)",
+              },
+              purple: {
+                300: "hsl(268,100%,86%)",
+                600: "hsl(268,34%,53%)",
+              },
+              slate: {
+                600: "hsl(240,10%,57%)",
+                900: "hsl(240,21%,20%)",
+              },
+              while: "hsl(0,0%,98%)",
+            },
+            fontFamily: {
+              rhd: ['"Red Hat Display"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Meet landing page</title>
+  </head>
+  <body class="h-screen bg-white font-rhd">
+    <nav class="pt-[48px] px-[80px]">
+      <img src="./assets/logo.svg" alt="logo" class="mx-auto" />
+    </nav>
+
+    <main class="mt-[64px] mb-[32px]">
+      <div class="space-y-[48px] md:space-y-[72px] px-[35px]">
+        <div
+          class="bg-[url('./assets/tablet/image-hero.png')] h-[160px] w-[433px] md:w-[820px] md:h-[303px] mx-[calc(50%-433px/2)] md:mx-[calc(50%-820px/2)] bg-cover"
+        ></div>
+        <div class="md:w-[448.3px] space-y-[24px] mx-auto">
+          <h1 class="font-rhd text-[40px] leading-[1.1] text-black font-black text-center">
+            Group Chat<br />
+            for Everyone
+          </h1>
+          <p class="font-rhd text-[16px] leading-[1.5] text-slate-600 text-center">
+            Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+          </p>
+          <div class="space-y-[16px] text-[16px] leading-[1.5] font-black md:flex md:space-x-[17px]">
+            <a
+              href="https://github.com/ReiRev/frontendmentor"
+              class="mx-[56px] md:mx-0 bg-cyan-600 rounded-[29px] inline-block"
+            >
+              <span class="px-[40px] py-[16px] space-x-[8px] flex justify-center items-center text-white">
+                <span class="text-white inline-block">Download</span
+                ><span class="text-cyan-300 inline-block">v1.3</span></span
+              ></a
+            >
+            <a
+              href="https://github.com/ReiRev/frontendmentor"
+              class="w-fit px-[40px] py-[16px] mx-auto block rounded-[29px] text-center text-white bg-purple-600"
+            >
+              What is it?
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-[32px] pt-[32px] pb-[64px] space-y-[64px]">
+        <div class="mx-auto">
+          <div class="w-[1px] h-[80px] bg-slate-300 mx-auto"></div>
+          <div
+            class="w-[56px] h-[56px] mx-auto rounded-full border-slate-300 border-[1px] text-center align-middle flex items-center justify-center"
+          >
+            <span class="block py-auto text-[16px] font-black leading-[1.5] text-slate-300">1</span>
+          </div>
+        </div>
+        <div class="grid gap-[16px] grid-cols-2 grid-rows-2">
+          <img
+            src="./assets/desktop/image-woman-in-videocall.jpg"
+            alt="woman in video call"
+            class="rounded-[8px] h-[144px] w-[147.5px] object-cover"
+          />
+          <img
+            src="./assets/desktop/image-women-videochatting.jpg"
+            alt="women video chatting"
+            class="rounded-[8px] h-[144px] w-[147.5px] object-cover"
+          />
+          <img
+            src="./assets/desktop/image-men-in-meeting.jpg"
+            alt="men in meeting"
+            class="rounded-[8px] h-[144px] w-[147.5px] object-cover"
+          />
+          <img
+            src="./assets/desktop/image-man-texting.jpg"
+            alt="man texting"
+            class="rounded-[8px] h-[144px] w-[147.5px] object-cover"
+          />
+        </div>
+        <div class="space-y-[32px]">
+          <div class="space-y-[16px] text-center">
+            <span class="upper text-cyan-600 font-black text-[12px] leading-[13px] tracking-[4px] block"
+              >Built for modern use</span
+            >
+            <h2 class="font-black text-[32px] leading-[35px] text-slate-900">Smarter meetings, all in one place</h2>
+          </div>
+          <p class="text-[16px] leading-[1.5] text-slate-600 text-center">
+            Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who
+            can join with invite-only team access, data encryption, and data export.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-[-28px]">
+        <div class="mx-auto">
+          <div class="w-[1px] h-[80px] bg-slate-300 mx-auto"></div>
+          <div
+            class="w-[56px] h-[56px] mx-auto rounded-full bg-white border-slate-300 border-[1px] text-center align-middle flex items-center justify-center"
+          >
+            <span class="block py-auto text-[16px] font-black leading-[1.5] text-slate-300">2</span>
+          </div>
+        </div>
+        <div class="w-full bg-cyan-600 text-center relative -z-10">
+          <img
+            src="./assets/mobile/image-footer.jpg"
+            alt="woman with laptop"
+            class="opacity-15 absolute top-0 left-0 w-full h-full object-fit"
+          />
+          <div class="px-[32px] py-[64px] space-y-[24px] relative z-0">
+            <h2 class="font-bold text-[32px] leading-[35px] text-white">Experience more together</h2>
+            <p class="text-16px leading-[1.5] text-white">
+              Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+            </p>
+            <a href="https://github.com/ReiRev/frontendmentor" class="bg-purple-600 rounded-[29px] block w-fit mx-auto">
+              <div class="px-[40px] py-[16px] space-x-[8px] flex justify-center items-center font-black">
+                <span class="text-white block">Download</span>
+                <span class="text-purple-300 block">v1.3</span>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
