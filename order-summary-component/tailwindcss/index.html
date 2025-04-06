@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blue: {
+                pale: "hsl(225, 100%, 94%)",
+                bright: "hsl(245, 75%, 52%)",
+                veryPale: "hsl(225, 100%, 98%)",
+                desaturated: "hsl(224, 23%, 55%)",
+                dark: "hsl(223, 47%, 23%)",
+              },
+            },
+            fontFamily: {
+              rhd: ['"Red Hat Display"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Order summary card</title>
+  </head>
+  <body class="h-screen relative bg-blue-pale font-rhd">
+    <img
+      src="./images/pattern-background-desktop.svg"
+      alt="background pattern"
+      class="absolute -z-10 h-[194px] md:h-auto md:max-h-[427.33px] top-0 object-contain md:object-cover"
+    />
+    <div class="pt-[71px] pb-[142px] md:pt-[102px] md:pb-[101px] drop-shadow-[0px_40px_40px_rgba(13,48,189,0.151826)]">
+      <main class="w-[327px] md:w-[450px] mx-auto">
+        <img
+          src="./images/illustration-hero.svg"
+          alt="dancing man"
+          class="h-[160px] md:h-[220px] object-cover rounded-t-[20px]"
+        />
+        <div
+          class="px-[24px] py-[32px] md:px-[48px] md:pt-[45px] md:pb-[48px] rounded-b-[20px] text-center bg-[#FFFFFF]"
+        >
+          <h1 class="font-black text-[22px] leading-[29px] md:text-[28px] md:leading-[37px] text-[#1F2E55]">
+            Order Summary
+          </h1>
+          <p class="mt-[16px] md:mt-[17px] text-15px leading-[25px] md:text-[16px] md:leading-[26px] text-[#717FA6]">
+            You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+          </p>
+          <div
+            class="mt-[24px] md:mt-[20px] pt-[17px] md:pt-[25px] md:pb-[25px] pb-[16px] px-[16px] rounded-[11px] flex justify-center items-center text-left bg-[#F7F9FF]"
+          >
+            <img src="./images/icon-music.svg" alt="music icon" class="w-[48px] h-[48px]" />
+            <div class="h-[40px] w-[81px] md:h-[48px] md:w-[92px] text-nowrap ml-[20px] md:ml-[28px]">
+              <h2 class="text-14px md:text-[16px] font-black leading-[19px] md:leading-[21px] text-[#1F2E55]">
+                Annual Plan
+              </h2>
+              <span class="text-14px leading-[19px] md:text-[16px] md:leading-[21px] text-[#717FA6]">$59.99/year</span>
+            </div>
+            <div
+              class="ml-[50px] md:ml-[94px] font-bold text-[13px] leading-[17px] md:text-[14px] md:leading-[19px] text-[#382AE1] underline"
+            >
+              <span>Change</span>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="h-[50px] bg-[#382AE1] text-[#FFFFFF] text-[15px] font-black mt-[24px] md:mt-[32px] flex items-center justify-center rounded-[11px] shadow-[0px_20px_20px_rgba(56,42,225,0.1903)]"
+            >Proceed to Payment</a
+          >
+          <a href="#" class="mt-[24px] md:mt-[32px] font-bold text-[15px] leading-[20px] text-[#717FA6] block"
+            >Cancel Order</a
+          >
+        </div>
+      </main>
+    </div>
+    <footer class="w-full text-xs text-center absolute b-2 text-gray-800">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-[color:hsl(228,45%,44%)] underline"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/ReiRev" class="text-[color:hsl(228,45%,44%)] underline">ReiRev</a>.
+    </footer>
+  </body>
+</html>
