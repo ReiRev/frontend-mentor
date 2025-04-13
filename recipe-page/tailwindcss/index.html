@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              white: "hsl(0, 0%, 100%)",
+              stone: {
+                100: "hsl(30, 54%, 90%)",
+                150: "hsl(30, 18%, 87%)",
+                600: "hsl(30, 10%, 34%)",
+                900: "hsl(24, 5%, 18%)",
+              },
+              brown: {
+                800: "hsl(14, 45%, 36%)",
+              },
+              rose: {
+                800: "hsl(332, 51%, 32%)",
+                50: "hsl(330, 100%, 98%)",
+              },
+            },
+            fontFamily: {
+              young: ['"Young Serif"', "sans-serif"],
+              outfit: ['"Outfit"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Recipe page</title>
+  </head>
+  <body class="h-min-screen md:px-[48px] md:py-[128px] md:space-x-[8px] md:bg-stone-100">
+    <main class="md:w-[616px] md:mx-auto md:p-[40px] md:space-y-[40px] lg:w-[736px] md:rounded-[24px] bg-white">
+      <img
+        src="./assets/images/image-omelette.jpeg"
+        alt="Omelette"
+        class="w-full h-[171px] md:w-[536px] md:h-[300px] lg:w-full md:rounded-[12px] object-cover"
+      />
+
+      <div class="px-[32px] py-[40px] space-y-[32px] md:p-0 bg-white">
+        <section class="space-y-[24px]">
+          <h1 class="text-[36px] md:text-[40px] font-young leading-[100%]">Simple Omelette Recipe</h1>
+          <p class="text-[16px] font-outfit leading-[150%] text-stone-600">
+            An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to
+            perfection, optionally filled with your choice of cheese, vegetables, or meats.
+          </p>
+        </section>
+
+        <section class="px-[24px] py-[24px] space-y-[16px] rounded-[12px] bg-rose-50">
+          <h2 class="font-outfit text-[20px] font-semibold leading-[100%] text-rose-800">Preparation time</h2>
+          <ul class="space-y-[8px]">
+            <li class="font-outfit text-[16px] leading-[150%] text-stone-600 flex items-center">
+              <div class="w-[16px] ml-[8px] mr-[16px]">
+                <span class="inline-block h-[4px] w-[4px] rounded-full bg-rose-800"></span>
+              </div>
+              <span><span class="font-bold">Total:</span> Approximately 10 minutes</span>
+            </li>
+            <li class="font-outfit text-[16px] leading-[150%] text-stone-600 flex items-center">
+              <div class="w-[16px] ml-[8px] mr-[16px]">
+                <span class="inline-block h-[4px] w-[4px] rounded-full bg-rose-800"></span>
+              </div>
+              <span><span class="font-bold">Preparation:</span> 5 minutes</span>
+            </li>
+            <li class="font-outfit text-[16px] leading-[150%] text-stone-600 flex items-center">
+              <div class="w-[16px] ml-[8px] mr-[16px]">
+                <span class="inline-block h-[4px] w-[4px] rounded-full bg-rose-800"></span>
+              </div>
+              <span><span class="font-bold">Cooking:</span> 5 minutes</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="space-y-[24px]">
+          <h2 class="text-[28px] font-young leading-[100%] text-brown-800">Ingredients</h2>
+          <ul class="space-y-[8px] font-outfit text-[16px] leading-[150%] text-stone-600">
+            <li class="flex items-center">
+              <div class="w-[16px] ml-[8px] mr-[16px]">
+                <span class="inline-block h-[4px] w-[4px] rounded-full bg-brown-800"></span>
+              </div>
+              <span class="inline-block w-fit"> 2-3 large eggs </span>
+            </li>
+            <li class="flex items-center">
+              <div class="w-[16px] ml-[8px] mr-[16px]">
+                <span class="inline-block h-[4px] w-[4px] rounded-full bg-brown-800"></span>
+              </div>
+              <span class="inline-block w-fit"> Salt, to taste</span>
+            </li>
+            <li class="flex items-center">
+              <div class="w-[16px] ml-[8px] mr-[16px]">
+                <span class="inline-block h-[4px] w-[4px] rounded-full bg-brown-800"></span>
+              </div>
+              <span class="inline-block w-fit">Pepper, to taste</span>
+            </li>
+            <li class="flex items-center">
+              <div class="w-[16px] ml-[8px] mr-[16px]">
+                <span class="inline-block h-[4px] w-[4px] rounded-full bg-brown-800"></span>
+              </div>
+              <span class="inline-block w-fit">1 tablespoon of butter or oil</span>
+            </li>
+            <li class="flex items-center">
+              <div class="w-[16px] ml-[8px] mr-[16px]">
+                <span class="inline-block h-[4px] w-[4px] rounded-full bg-brown-800"></span>
+              </div>
+              <span class="inline-block w-fit">Optional fillings: cheese, diced vegetables, cooked meats, herbs</span>
+            </li>
+          </ul>
+        </section>
+
+        <div class="h-0">
+          <div class="h-[1px] w-full box-content bg-stone-150"></div>
+        </div>
+
+        <section class="space-y-[24px]">
+          <h2 class="text-[28px] font-young leading-[100%] text-brown-800">Instructions</h2>
+
+          <ol class="space-y-[8px] font-outfit text-[16px] text-stone-600 leading-[150%]">
+            <li class="flex">
+              <span class="w-16px text-brown-800 font-bold ml-[8px] mr-[16px]">1.</span>
+              <div>
+                <span class="font-bold">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper
+                until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.
+              </div>
+            </li>
+            <li class="flex">
+              <span class="w-16px text-brown-800 font-bold ml-[8px] mr-[16px]">2.</span>
+              <div>
+                <span class="font-bold">Heat the pan:</span> Place a non-stick frying pan over medium heat and add
+                butter or oil.
+              </div>
+            </li>
+            <li class="flex">
+              <span class="w-16px text-brown-800 font-bold ml-[8px] mr-[16px]">3.</span>
+              <div>
+                <span class="font-bold">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the
+                eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+              </div>
+            </li>
+            <li class="flex">
+              <span class="w-16px text-brown-800 font-bold ml-[8px] mr-[16px]">4.</span>
+              <div>
+                <span class="font-bold">Add fillings (optional):</span> When the eggs begin to set at the edges but are
+                still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.
+              </div>
+            </li>
+            <li class="flex">
+              <span class="w-16px text-brown-800 font-bold ml-[8px] mr-[16px]">5.</span>
+              <div>
+                <span class="font-bold">Fold and serve:</span> As the omelette continues to cook, carefully lift one
+                edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.
+              </div>
+            </li>
+            <li class="flex">
+              <span class="w-16px text-brown-800 font-bold ml-[8px] mr-[16px]">6.</span>
+              <div><span class="font-bold">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</div>
+            </li>
+          </ol>
+        </section>
+
+        <div class="h-0">
+          <div class="h-[1px] w-full box-content bg-stone-150"></div>
+        </div>
+
+        <section class="space-y-[24px] text-[16px] font-outfit text-stone-600">
+          <h2 class="block text-[28px] font-young leading-[100%] text-brown-800">Nutrition</h2>
+          <p class="tracking-[0px]">
+            The table below shows nutritional values per serving without the additional fillings.
+          </p>
+          <table class="block table-fixed">
+            <tbody class="block space-y-[12px] text-[16px] leading-[150%]">
+              <tr class="px-[32px] space-x-[16px] flex text-left">
+                <td class="block flex-1 p-0">Calories</td>
+                <td class="block flex-1 p-0 text-brown-800 font-bold">277kcal</td>
+              </tr>
+              <tr class="h-0 block w-full">
+                <td class="h-0 w-full block">
+                  <div class="block h-[1px] w-full bg-stone-150"></div>
+                </td>
+              </tr>
+              <tr class="px-[32px] space-x-[16px] flex text-left">
+                <td class="block flex-1 p-0">Carbs</td>
+                <td class="block flex-1 p-0 text-brown-800 font-bold">0g</td>
+              </tr>
+              <tr class="h-0 block w-full">
+                <td class="h-0 w-full block">
+                  <div class="block h-[1px] w-full bg-stone-150"></div>
+                </td>
+              </tr>
+              <tr class="px-[32px] space-x-[16px] flex text-left">
+                <td class="block flex-1 p-0">Protein</td>
+                <td class="block flex-1 p-0 text-brown-800 font-bold">20g</td>
+              </tr>
+              <tr class="h-0 block w-full">
+                <td class="h-0 w-full block">
+                  <div class="block h-[1px] w-full bg-stone-150"></div>
+                </td>
+              </tr>
+              <tr class="px-[32px] space-x-[16px] flex text-left">
+                <td class="block flex-1 p-0">Fat</td>
+                <td class="block flex-1 p-0 text-brown-800 font-bold">22g</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+
+      <footer class="w-screen text-xs text-center fixed bottom-2 left-1/2 transform -translate-x-1/2">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="text-[color:hsl(228,45%,44%)] hover:underline duration-300"
+        >
+          Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/ReiRev" class="text-[color:hsl(228,45%,44%)] hover:underline duration-300">ReiRev</a
+        >.
+      </footer>
+    </main>
+  </body>
+</html>

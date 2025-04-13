@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              red: "hsl(0, 78%, 62%)",
+              cyan: "hsl(180, 62%, 55%)",
+              orange: "hsl(34, 97%, 64%)",
+              blue: "hsl(212, 86%, 64%)",
+              gray: {
+                500: "hsl(234, 12%, 34%)",
+                400: "hsl(212, 6%, 44%)",
+              },
+              white: "hsl(0, 0%, 100%)",
+            },
+            fontFamily: {
+              pop: ['"Poppins"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- text-preset-1 text-[24px] md:text-[36px] leading-[1.4] tracking-[0.25px] font-semibold -->
+    <!-- text-preset-2 text-[24px] md:text-[36px] leading-[1.4] tracking-[0.25px] font-extralight -->
+    <!-- text-preset-3 text-[20px] leading-[1.35] tracking-none font-semibold -->
+    <!-- text-preset-4 text-[15px] leading-[1.4] tracking-none -->
+    <!-- text-preset-5 text-[13px] leading-[1.6] tracking-none -->
+  </head>
+  <body class="h-screen bg-[#FAFAFA]">
+    <main class="space-y-[60px] md:space-y-[74px] py-[56px] md:py-[80px] lg:py-[102px] mx-auto font-pop">
+      <div class="w-[316px] md:w-[540px] lg:w-[540px] space-y-[16px] text-center mx-auto">
+        <div>
+          <h1
+            class="text-[24px] md:text-[36px] leading-[34px] md:leading-[50px] tracking-[0.25px] font-extralight text-gray-500 inline"
+          >
+            Reliable, efficient delivery
+          </h1>
+          <span
+            class="text-[24px] md:text-[36px] leading-[34px] md:leading-[50px] tracking-[0.25px] font-semibold text-gray-500 inline"
+            >Powered by Technology</span
+          >
+        </div>
+        <p class="text-[15px] leading-[1.4] tracking-none text-gray-400">
+          Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is
+          successful
+        </p>
+      </div>
+      <div class="mx-auto max-w-fit grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 lg:grid-rows-4 gap-[32px]">
+        <div
+          class="h-[250px] w-[314px] lg:w-[350px] lg:h-[250px] mx-auto rounded-t-[8px] shadow-[inset_0_1004px_0_-1000px_rgba(68,211,210,1)] flex flex-col md:col-start-2 md:col-span-2 lg:col-start-1 lg:col-span-1 lg:row-start-2 lg:row-span-2"
+        >
+          <div class="h-full w-full space-y-[32px] p-[32px] shadow-[0_15px_30px_-11px_rgba(131,166,210,0.5)]">
+            <div class="space-y-[6px] rounded-[6px]">
+              <h2 class="text-[20px] leading-[1.35] tracking-none font-semibold text-gray-500">Supervisor</h2>
+              <p class="text-[13px] leading-[1.6] tracking-[0.09px] text-gray-400 block">
+                Monitors activity to identify project roadblocks
+              </p>
+            </div>
+            <div class="grow flex items-start justify-end">
+              <img src="./images/icon-supervisor.svg" alt="supervisor" class="w-[64px] h-[64px]" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="h-[250px] w-[314px] lg:w-[350px] lg:h-[250px] mx-auto rounded-t-[8px] shadow-[inset_0_1004px_0_-1000px_rgba(234,84,84,1)] border-red flex flex-col md:col-start-1 md:col-span-2 lg:col-start-2 lg:col-span-1 lg:row-start-1 lg:row-span-2"
+        >
+          <div class="h-full w-full space-y-[32px] p-[32px] shadow-[0_15px_30px_-11px_rgba(131,166,210,0.5)]">
+            <div class="space-y-[6px] rounded-[6px]">
+              <h2 class="text-[20px] leading-[1.35] tracking-none font-semibold text-gray-500">Team Builder</h2>
+              <p class="text-[13px] leading-[1.6] tracking-[0.09px] text-gray-400 block">
+                Scans our talent network to create the optimal team for your project
+              </p>
+            </div>
+            <div class="grow flex items-start justify-end">
+              <img src="./images/icon-team-builder.svg" alt="supervisor" class="w-[64px] h-[64px]" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="h-[250px] w-[314px] lg:w-[350px] lg:h-[250px] mx-auto rounded-t-[8px] shadow-[inset_0_1004px_0_-1000px_rgba(252,174,74,1)] border-orange flex flex-col md:col-start-3 md:col-span-2 lg:col-start-2 lg:col-span-1 lg:row-start-3 lg:row-span-2"
+        >
+          <div class="h-full w-full space-y-[32px] p-[32px] shadow-[0_15px_30px_-11px_rgba(131,166,210,0.5)]">
+            <div class="space-y-[6px] rounded-[6px]">
+              <h2 class="text-[20px] leading-[1.35] tracking-none font-semibold text-gray-500">Karma</h2>
+              <p class="text-[13px] leading-[1.6] tracking-[0.09px] text-gray-400 block">
+                Regularly evaluates our talent to ensure quality
+              </p>
+            </div>
+            <div class="flex justify-end">
+              <img src="./images/icon-karma.svg" alt="supervisor" class="w-[64px] h-[64px]" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="h-[250px] w-[314px] lg:w-[350px] lg:h-[250px] mx-auto rounded-t-[8px] shadow-[inset_0_1004px_0_-1000px_rgba(84,158,242,1)] border-blue flex flex-col md:col-start-2 md:col-span-2 lg:col-start-3 lg:col-span-1 lg:row-start-2 lg:row-span-2"
+        >
+          <div class="h-full w-full space-y-[32px] p-[32px] shadow-[0_15px_30px_-11px_rgba(131,166,210,0.5)]">
+            <div class="space-y-[6px] rounded-[6px]">
+              <h2 class="text-[20px] leading-[1.35] tracking-none font-semibold text-gray-500">Calculator</h2>
+              <p class="text-[13px] leading-[1.6] tracking-[0.09px] text-gray-400 block">
+                Uses data from past projects to provide better delivery estimates
+              </p>
+            </div>
+            <div class="grow flex items-start justify-end">
+              <img src="./images/icon-calculator.svg" alt="supervisor" class="w-[64px] h-[64px]" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="w-full text-xs text-center fixed bottom-4 left-1/2 transform -translate-x-1/2 text-gray-800">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-[color:hsl(228,45%,44%)] underline"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/ReiRev" class="text-[color:hsl(228,45%,44%)] underline">ReiRev</a>.
+    </footer>
+  </body>
+</html>

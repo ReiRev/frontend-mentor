@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blue: {
+                soft: "hsl(215, 51%, 70%)",
+              },
+              cyan: "hsl(178, 100%, 50%)",
+              darkBlue: {
+                mainBg: "hsl(217, 54%, 11%)",
+                cardBg: "hsl(216, 50%, 16%)",
+                line: "hsl(215, 32%, 27%)",
+              },
+              white: "hsl(0, 0%, 100%)",
+            },
+            fontFamily: {
+              outfit: ["Outfit", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body class="h-screen font-outfit bg-darkBlue-mainBg pt-[62px] md:pt-[152px]">
+    <div class="w-fit mx-auto p-[24px] md:pt-[24px] md:pb-[32px] rounded-[15px] bg-darkBlue-cardBg">
+      <div class="w-[278px] md:w-[302px]">
+        <img
+          src="./images/image-equilibrium.jpg"
+          alt="equilibrium"
+          class="w-[278px] h-[278px] md:w-[302px] md:h-[302px] block rounded-[8px]"
+        />
+        <h2 class="mt-[24px] font-semibold text-[22px] leading-[28px] text-white hover:text-cyan duration-300">
+          Equilibrium #3429
+        </h2>
+        <p class="mt-[12px] md:mt-[16px] text-blue-soft font-light text-[18px] leading-[26px]">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+
+        <div
+          class="h-[19px] md:h-[20px] text-[15px] leading-[19px] md:text-[16px] md:leading-[20px] mt-[16px] md:mt-[24px] flex justify-between items-center"
+        >
+          <div class="flex items-center justify-center space-x-[6px]">
+            <img src="./images/icon-ethereum.svg" alt="ethereum" class="block" />
+            <span class="font-semibold text-cyan block whitespace-nowrap">0.041 ETH</span>
+          </div>
+          <div class="flex items-center justify-center space-x-[8px]">
+            <img src="./images/icon-clock.svg" alt="clock" class="block" />
+            <span class="block text-blue-soft">3 days left</span>
+          </div>
+        </div>
+
+        <div class="mt-[16px] md:mt-[24px] h-[1px] bg-darkBlue-line"></div>
+
+        <div class="h-[33px] mt-[16px] flex items-center justify-start space-x-[16px]">
+          <img
+            src="./images/image-avatar.png"
+            alt="Jules Wyvern"
+            class="h-full border-[1px] border-white rounded-full"
+          />
+          <div class="text-[16px] text-blue-soft">
+            Creation of <span class="text-white hover:text-cyan duration-300">Jules Wyvern</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="w-full h-[152px] flex items-end justify-center text-xs text-center text-gray-800">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-[color:hsl(228,45%,44%)] underline"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/ReiRev" class="text-[color:hsl(228,45%,44%)] underline">ReiRev</a>.
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              purple: {
+                50: "hsl(260, 100%, 95%)",
+                300: "hsl(264, 82%, 80%)",
+                500: "hsl(263, 55%, 52%)",
+              },
+              white: "hsl(0, 0%, 100%)",
+              gray: {
+                100: "hsl(214, 17%, 92%)",
+                200: "hsl(0, 0%, 81%)",
+                400: "hsl(224, 10%, 45%)",
+                500: "hsl(217, 19%, 35%)",
+              },
+              darkBlue: "hsl(219, 29%, 14%)",
+              black: "hsl(0, 0%, 7%)",
+            },
+            fontFamily: {
+              barlow: ['"Barlow Semi Condensed"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- text-preset-1 text-[20px] leading-[1.2] font-semibold  -->
+    <!-- text-preset-2 text-[13px] leading-[1.1] font-medium  -->
+    <!-- text-preset-3 text-[13px] leading-[1.4] font-medium  -->
+    <!-- text-preset-4 text-[11px] leading-[1.1] font-medium  -->
+  </head>
+  <body class="h-screen bg-[#F6F5F6] font-barlow text-white">
+    <div
+      class="w-[305px] md:w-[647px] xl:w-[1114px] py-[73px] md:py-[83px] xl:py-[229px] gap-x-[32px] gap-y-[24px] mx-auto grid md:grid-cols-2 xl:grid-cols-4 xl:auto-rows-max"
+    >
+      <div
+        class="p-[32px] space-y-[16px] rounded-[8px] bg-purple-500 drop-shadow-[40px_60px_50px_rgba(72,85,106,0.2474)] md:relative md:col-span-2 xl:col-start-1 xl:col-end-3 xl:row-start-1 xl:row-end-2"
+      >
+        <div class="space-x-[17px] flex items-center">
+          <img
+            src="./images/image-daniel.jpg"
+            alt="Daniel Clifford"
+            class="w-[28px] h-[28px] rounded-full shadow-[0_0_0_2px_#A775F1]"
+          />
+          <div class="space-y-[4px]">
+            <span class="text-[13px] leading-[14px] font-medium block">Daniel Clifford</span>
+            <span class="text-[11px] leading-[12px] font-medium text-purple-50 block">Verified Graduate</span>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./images/bg-pattern-quotation.svg"
+            alt="quotation"
+            class="w-[0px] h-[0px] md:w-[104px] md:h-[102px] md:absolute top-[0px] left-[min(379px,70%)] invisible md:visible md:z-10"
+          />
+          <p class="text-[20px] leading-[1.2] font-semibold relative md:z-20">
+            I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I
+            joined. I honestly feel I got every penny’s worth.
+          </p>
+        </div>
+        <p class="text-[13px] leading-[18px] font-medium text-purple-50">
+          “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have
+          heard some people who had an amazing experience here. I signed up for the free intro course and found it
+          incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my
+          life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR”
+          startup.
+        </p>
+      </div>
+
+      <div
+        class="p-[32px] space-y-[16px] rounded-[8px] bg-gray-500 drop-shadow-[40px_60px_50px_rgba(72,85,106,0.2474)] xl:col-start-3 xl:col-end-4 xl:row-start-1 xl:row-end-2"
+      >
+        <div class="space-x-[17px] flex items-center">
+          <img src="./images/image-jonathan.jpg" alt="Jonathan Walters" class="w-[28px] h-[28px] rounded-full" />
+          <div class="space-y-[4px]">
+            <span class="text-[13px] leading-[14px] font-medium block">Jonathan Walters</span>
+            <span class="text-[11px] leading-[12px] font-medium text-gray-300 block">Verified Graduate</span>
+          </div>
+        </div>
+        <p class="text-[20px] leading-[1.2] font-semibold">The team was very supportive and kept me motivated</p>
+        <p class="text-[13px] leading-[18px] font-medium text-gray-300">
+          “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big
+          company. This was one of the best investments I’ve made in myself. ”
+        </p>
+      </div>
+
+      <div
+        class="p-[32px] space-y-[16px] rounded-[8px] bg-white drop-shadow-[40px_60px_50px_rgba(72,85,106,0.2474)] xl:col-start-1 xl:col-end-2 xl:row-start-2 xl:row-end-3"
+      >
+        <div class="space-x-[17px] flex items-center">
+          <img src="./images/image-jeanette.jpg" alt="Jeanette Harmon" class="w-[28px] h-[28px] rounded-full" />
+          <div class="space-y-[4px]">
+            <span class="text-[13px] leading-[14px] font-medium text-gray-500 block">Jeanette Harmon</span>
+            <span class="text-[11px] leading-[12px] font-medium text-gray-400 block">Verified Graduate</span>
+          </div>
+        </div>
+        <p class="text-[20px] leading-[1.2] font-semibold text-gray-500">
+          An overall wonderful and rewarding experience
+        </p>
+        <p class="text-[13px] leading-[18px] font-medium text-gray-400">
+          “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing
+          something I love. ”
+        </p>
+      </div>
+
+      <div
+        class="p-[32px] space-y-[16px] rounded-[8px] bg-darkBlue drop-shadow-[40px_60px_50px_rgba(72,85,106,0.2474)] md:col-span-2 xl:col-start-2 xl:col-end-4 xl:row-start-2 xl:row-end-3"
+      >
+        <div class="space-x-[17px] flex items-center">
+          <img
+            src="./images/image-patrick.jpg"
+            alt="Patrick Abrams"
+            class="w-[28px] h-[28px] rounded-full shadow-[0_0_0_2px_#A775F1]"
+          />
+          <div class="space-y-[4px]">
+            <span class="text-[13px] leading-[14px] font-medium block">Patrick Abrams</span>
+            <span class="text-[11px] leading-[12px] font-medium block">Verified Graduate</span>
+          </div>
+        </div>
+        <p class="text-[20px] leading-[1.2] font-semibold text-gray-200">
+          Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning
+          from their experiences was easy.
+        </p>
+        <p class="text-[13px] leading-[18px] font-medium text-gray-100">
+          “ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the
+          confidence necessary to be able to go out in the world and present myself as a capable junior developer. The
+          standard is above the rest. You will get the personal attention you need from an incredible community of smart
+          and amazing people. ”
+        </p>
+      </div>
+
+      <div
+        class="p-[32px] space-y-[16px] rounded-[8px] bg-white drop-shadow-[40px_60px_50px_rgba(72,85,106,0.2474)] md:col-span-2 xl:col-start-4 xl:col-end-5 xl:row-start-1 xl:row-end-3"
+      >
+        <div class="space-x-[17px] flex items-center">
+          <img src="./images/image-kira.jpg" alt="Kira Whittle" class="w-[28px] h-[28px] rounded-full" />
+          <div class="space-y-[4px]">
+            <span class="text-[13px] leading-[14px] font-medium block text-gray-500">Kira Whittle</span>
+            <span class="text-[11px] leading-[12px] font-medium block text-gray-400">Verified Graduate</span>
+          </div>
+        </div>
+        <p class="text-[20px] leading-[1.2] font-semibold text-gray-500">
+          Such a life-changing experience. Highly recommended!
+        </p>
+        <p class="text-[13px] leading-[18px] font-medium text-gray-400">
+          “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals
+          who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who
+          can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were
+          very hands-on and I never had to wait long for assistance. The agile team project, in particular, was
+          outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve
+          often referred to it during interviews as an example of my developent experience. It certainly helped me land
+          a job as a full-stack developer after receiving multiple offers. 100% recommend! ”
+        </p>
+      </div>
+    </div>
+
+    <footer class="w-full text-xs text-center fixed bottom-4 left-1/2 transform -translate-x-1/2 text-gray-800">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-[color:hsl(228,45%,44%)] underline"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/ReiRev" class="text-[color:hsl(228,45%,44%)] underline">ReiRev</a>.
+    </footer>
+  </body>
+</html>

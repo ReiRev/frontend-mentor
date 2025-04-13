@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                mainBg: "hsl(233, 47%, 7%)",
+                cardBg: "hsl(244, 38%, 16%)",
+                accent: "hsl(277, 64%, 61%)",
+              },
+              neutral: {
+                white: "hsl(0, 0%, 100%)",
+                whiteParagraph: "hsla(0, 0%, 100%, 0.75)",
+                whiteStat: "hsla(0, 0%, 100%, 0.6)",
+              },
+            },
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+              lex: ["Lexend Deca", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-optical-sizing: none;
+      }
+    </style>
+
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body class="h-screen bg-[#0A0C1C] pt-[88px] xl:pt-[177px] mx-auto font-inter text-white">
+    <main class="w-[327px] xl:w-[1100px] mx-auto xl:flex xl:flex-row-reverse">
+      <div class="relative rounded-[8px] w-full h-[240px] xl:w-[540px] xl:h-[446px]">
+        <picture>
+          <source srcset="./images/image-header-desktop.jpg" media="(min-width:1024px)" />
+          <img
+            src="./images/image-header-mobile.jpg"
+            alt="working engineers"
+            class="w-full h-full object-cover absolute top-0 left-0 opacity-[75.11%] mix-blend-multiply xl:w-[540px] xl:h-[446px]"
+          />
+        </picture>
+        <div
+          class="w-full h-full bg-[#AB5CDB] -z-10 rounded-t-[8px] xl:rounded-tl-none xl:rounded-r-[8px] xl:w-[540px] xl:h-[446px]"
+        ></div>
+      </div>
+
+      <div
+        class="rounded-b-[8px] xl:rounded-br-none xl:rounded-l-[8px] xl:w-[560px] bg-[#1B1937] px-[31.5px] xl:pl-[72px] pt-[40px] xl:pt-[71px] pb-[32px] xl:pb-[59px] text-center xl:text-left"
+      >
+        <h1 class="font-bold text-[28px] leading-[32px] xl:text-[36px] xl:leading-[44px]">
+          Get <span class="text-[#AB5CDB]">insights</span> that help your business grow.
+        </h1>
+        <p class="mt-[16px] xl:mt-[25px] text-[15px] leading-[25px] text-[#C6C5CD] xl:pr-[13px]">
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and
+          overall efficiency.
+        </p>
+        <div class="mt-[40px] xl:mt-[72px] space-y-[24px] xl:flex xl:space-x-[63px] xl:space-y-0">
+          <p class="space-y-[2px]">
+            <span class="block font-bold text-[24px] leading-[29px]">10k+</span>
+            <span class="block font-lex text-[12px] leading-[25px] tracking-[1px] uppercase text-[#C6C5CD]">
+              companies
+            </span>
+          </p>
+          <p class="space-y-[2px]">
+            <span class="block font-bold text-[24px] leading-[29px]">314</span>
+            <span class="block font-lex text-[12px] leading-[25px] tracking-[1px] uppercase text-[#C6C5CD]">
+              templates
+            </span>
+          </p>
+          <p class="space-y-[2px]">
+            <span class="block font-bold text-[24px] leading-[29px]">12M+</span>
+            <span class="block font-lex text-[12px] leading-[25px] tracking-[1px] uppercase text-[#C6C5CD]">
+              queries
+            </span>
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
