@@ -14,7 +14,7 @@ export default function FAQ({
   const [open, toggleOpen] = useState<boolean>(defaultOpen);
   return (
     <div className={`transition-all-300`}>
-      <div className="flex items-center justify-between space-x-[24px]">
+      <div className="flex items-center justify-between ">
         <h2
           className="font-semibold font-workSans text-[16px] md:text-[18px] leading-[19px] md:leading-[30px] hover:text-[#8D22C1] duration-300"
           onClick={() => toggleOpen(!open)}
