@@ -3,7 +3,7 @@ import { Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const hankenGrotesk = Hanken_Grotesk({
-  variable: "--font-hanken-grotesk",
+  variable: "--font-hankenGrotesk",
   weight: ["500", "700", "800"],
   subsets: ["latin"],
 });

@@ -5,7 +5,7 @@
 }
 
 @theme {
-  --font-hankenGrotesk: var(--font-hanken-grotesk);
+  --font-hankenGrotesk: var(--font-hankenGrotesk);
   --color-light-red: hsl(0, 100%, 67%);
   --color-orangey-yellow: hsl(39, 100%, 56%);
   --color-green-teal: hsl(166, 100%, 37%);
