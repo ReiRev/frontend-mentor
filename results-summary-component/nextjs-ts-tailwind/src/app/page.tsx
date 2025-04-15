@@ -1,102 +1,57 @@
-import Image from "next/image";
+import ScoreCard from "@/components/ScoreCard";
+import Button from "@/components/Button";
+import Data from "./data.json";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="">
+      <main className="relative min-h-screen bg-white shadow-[0_30px_60px_0_rgba(61,108,236,0.15)] md:mx-auto md:flex md:min-h-0 md:w-[736px] md:rounded-[32px]">
+        <div
+          className="space-y-[24px] rounded-b-[32px] pb-[40px] pt-[24px] md:w-[368px] md:space-y-[35px] md:rounded-[32px] md:px-[54px] md:pb-[46px] md:pt-[38px]"
+          style={{
+            background: "var(--gradient-hero)",
+          }}
+        >
+          <h1 className="text-light-lavender block text-center font-bold leading-[23px] md:text-[24px] md:leading-[31px]">
+            Your Result
+          </h1>
+          <div className="from-violet-blue to-persian-blue mx-auto flex h-[140px] w-[140px] flex-col items-center justify-center rounded-full bg-gradient-to-b md:h-[200px] md:w-[200px] md:space-y-[4px]">
+            <span className="block text-[56px] font-extrabold text-white md:text-[72px] md:leading-[72px]">76</span>
+            <span className="text-light-lavender block text-[16px] font-bold leading-[23px] opacity-50 md:text-[18px]">
+              of 100
+            </span>
+          </div>
+          <div className="mx-auto space-y-[8px] px-[55px] text-center md:mt-[-7px] md:space-y-[14px] md:px-0 md:pb-[9px]">
+            <h2 className="text-[24px] font-bold leading-[31px] text-white md:text-[32px] md:leading-[42px]">Great</h2>
+            <p className="text-light-lavender text-[16px] font-medium leading-[21px] md:text-[18px] md:leading-[23px]">
+              You scored higher than 65% of the people who have taken these tests.
+            </p>
+          </div>
+        </div>
+        <div className="space-y-[24px] bg-white px-[30px] pt-[24px] md:w-[368px] md:space-y-[28px] md:rounded-r-[32px] md:px-[40px] md:pt-[38px]">
+          <h2 className="font-bold leading-[23px] md:text-[24px] md:leading-[31px]">Summary</h2>
+          <div className="space-y-[16px]">
+            {Data.map(({ category, score, icon }, index) => (
+              <ScoreCard category={category} score={score} iconPath={icon} key={index} />
+            ))}
+          </div>
+          <Button className="md:mt-[41px]">Continue</Button>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+      <footer className="mx-auto mt-4 hidden h-full text-center text-xs text-gray-800 md:block">
+        Challenge by
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
-          rel="noopener noreferrer"
+          className="text-[color:hsl(228,45%,44%)] underline"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+          Frontend Mentor
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
+        . Coded by{" "}
+        <a href="https://github.com/ReiRev" className="text-[color:hsl(228,45%,44%)] underline">
+          ReiRev
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        .
       </footer>
     </div>
   );
