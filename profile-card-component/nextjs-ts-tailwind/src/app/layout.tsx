@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${kumbhSans.variable} bg-dark-cyan background-pattern relative h-screen pt-[147px] font-sans antialiased`}
+        className={`${kumbhSans.variable} bg-dark-cyan background-pattern relative h-screen pt-[147px] font-sans antialiased lg:pt-[173px]`}
       >
         {children}
       </body>
