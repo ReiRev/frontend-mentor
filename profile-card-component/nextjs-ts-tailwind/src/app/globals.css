@@ -7,3 +7,25 @@
   --color-dark-grayish-blue: hsl(227, 10%, 46%);
   --color-dark-gray: hsl(0, 0%, 59%);
 }
+
+@layer components {
+  .background-pattern {
+    background-image: url("./bg-pattern-top.svg"), url("./bg-pattern-bottom.svg");
+    background-size:
+      622px 622px,
+      622px 622px;
+    background-position:
+      left calc(-311px - 100px) top calc(-311px - 44px),
+      right calc(-311px - 100px) bottom -311px;
+    background-repeat: no-repeat, no-repeat;
+
+    @media (min-width: theme(--breakpoint-lg)) {
+      background-size:
+        978px 978px,
+        978px 978px;
+      background-position:
+        left calc(-978px / 2 + 204px) top calc(-978px / 2 - 21px),
+        right calc(-978px / 2 + 259px) bottom calc(-978px / 2 - 144px);
+    }
+  }
+}
