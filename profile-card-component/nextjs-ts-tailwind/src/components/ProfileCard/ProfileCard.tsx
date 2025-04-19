@@ -25,9 +25,9 @@ export default function ProfileCard({
       <img
         src={avatarImagePath}
         alt=""
-        className="mx-auto mt-[-48px] block h-[100px] w-[100px] rounded-full border-[5px] border-white"
+        className="mx-auto mt-[-48px] block h-[106px] w-[106px] rounded-full border-[5px] border-white"
       />
-      <div className="mx-auto space-y-[8px] text-center">
+      <div className="mx-auto mt-[-10px] space-y-[8px] text-center">
         <h1 className="flex items-center justify-center space-x-[9px] align-text-top text-[18px] font-bold leading-[23px]">
           <span className="inline">{username}</span>
           <span className="text-dark-gray font-normal">{age}</span>
