@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-overpass: var(--font-overpass);
+  --color-orange-500: hsl(25, 97%, 53%);
+  --color-white: hsl(0, 100%, 100%);
+  --color-gray-500: hsl(217, 12%, 63%);
+  --color-gray-900: hsl(213, 19%, 18%);
+  --color-gray-950: hsl(216, 12%, 8%);
+}
+
+@layer components {
+  .text-heading {
+    @apply text-[24px] font-bold leading-[30px];
+
+    @media (min-width: theme(--breakpoint-md)) {
+      @apply text-[28px] leading-[35px];
+    }
+  }
+
+  .text-paragraph {
+    @apply text-[14px] leading-[22px];
+
+    @media (min-width: theme(--breakpoint-md)) {
+      @apply text-[15px] leading-[24px];
+    }
+  }
+}
