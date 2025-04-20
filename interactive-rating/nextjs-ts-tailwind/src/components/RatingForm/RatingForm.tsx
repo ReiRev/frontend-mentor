@@ -61,7 +61,7 @@ export default function RatingForm({ className = "" }: Readonly<{ className?: st
         </div>
         <button
           type="submit"
-          className="inline w-full rounded-[22.5px] bg-orange-500 text-[14px] font-semibold uppercase leading-[45px] tracking-[1.87px]"
+          className="inline w-full rounded-[22.5px] bg-orange-500 text-[14px] font-semibold uppercase leading-[45px] tracking-[1.87px] text-black duration-300 hover:bg-white"
         >
           submit
         </button>
